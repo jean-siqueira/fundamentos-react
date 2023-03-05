@@ -1,0 +1,14 @@
+.Card {
+    background-color: red;
+    border-radius: 10px;
+    ove
+}
+
+.Card .Title {
+    background-color: red;
+}
+
+.Card .Content {
+    background-color: #fff;
+    color: #000;
+}
