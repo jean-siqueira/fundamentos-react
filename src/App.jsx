@@ -22,7 +22,6 @@ export default (_) => (
         <ParOuImpar numero={20}></ParOuImpar>
         <UsuarioInfo usuario={{nome:'Jean'}}></UsuarioInfo>
         <UsuarioInfo usuario={{email:'jean@teste.com'}}></UsuarioInfo>
-        <UsuarioInfo></UsuarioInfo>
       </Card>
 
       <Card titulo="#07 - Tabela Produtos" color="#001f3f">
