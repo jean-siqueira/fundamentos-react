@@ -1,26 +1,28 @@
-import React from "react";
+import React, { useState }  from "react";
 import InidetaFilho from "./InidetaFilho";
 
 export default (props) => {
-  let nome = '?'
-  let idade = 0
-  let nerd = false
+
+  const [nome, setNome] = useState('?')
+  const [idade, setIdade] = useState(0)
+  const [nerd, setNerd] = useState(false)
   // nome idade nerd
 
   function fornecerInformacoes(nomeParam, idadeParam, nerdParam) {
    
-    nome = nomeParam;
-    idade = idadeParam;
-    nerd = nerdParam;
+    setNome(nomeParam);
+    setIdade(idadeParam);
+    setNerd(nerdParam);
+
     console.log(nome, idade, nerd);
   }
 
   return (
     <div>
       <div>
-        <span>{nome}</span>
+        <span>{nome} </span>
         <span>
-          <strong>{idade}</strong>
+          <strong>{idade} </strong>
         </span>
         <span>{nerd ? "Verdadeiro" : "Falso"}</span>
       </div>
