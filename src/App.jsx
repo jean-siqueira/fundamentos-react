@@ -16,12 +16,17 @@ import DiretaPai from "./components/comunicacao/DiretaPai";
 import InideretaPai from "./components/comunicacao/InideretaPai";
 import Input from "./components/formulario/Input";
 import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 export default (_) => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#13 - Mega Sena" color="#E89F56">
+        <Mega qtde={8}></Mega>
+      </Card>
+
       <Card titulo="#12 - Contador" color="#424242">
         <Contador numeroInicial={105}></Contador>
       </Card>
